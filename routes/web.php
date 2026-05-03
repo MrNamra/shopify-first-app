@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware(['verify.shopify'])->get('/', function () {
+    return view('dashboard');
 });

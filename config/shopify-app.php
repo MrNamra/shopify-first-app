@@ -615,6 +615,10 @@ return [
 
     'iframe_ancestors' => '',
 
+    'appbridge_enabled' => env('SHOPIFY_APPBRIDGE_ENABLED', true),
+
+    'turbo_enabled' => env('SHOPIFY_TURBO_ENABLED', false),
+
     /*
     |--------------------------------------------------------------------------
     | Forbidden middleware groups
@@ -625,5 +629,5 @@ return [
     */
     'forbidden_web_middleware_groups' => [
         'api',
-    ]
+    ],
 ];

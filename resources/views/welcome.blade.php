@@ -6,8 +6,6 @@
 @endsection
 
 @section('scripts')
-    @parent
-
     <script>
         actions.TitleBar.create(app, { title: 'Welcome' });
     </script>

@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="shopify-api-key" content="{{ \Osiset\ShopifyApp\Util::getShopifyConfig('api_key') }}" />
+        <script src="https://cdn.shopify.com/shopifycloud/app-bridge.js"></script>
 
         <title>{{ \Osiset\ShopifyApp\Util::getShopifyConfig('app_name') }}</title>
 
@@ -27,7 +29,7 @@
                             <div class="stats-grid">
                                 <div class="stat-item">
                                     <span class="stat-label">Total Sales</span>
-                                    <span class="stat-value">$12,450</span>
+                                    <span class="stat-value">$14,450</span>
                                 </div>
                                 <div class="stat-item">
                                     <span class="stat-label">Total Orders</span>
@@ -39,11 +41,6 @@
                                 </div>
                             </div>
 
-                            <div class="action-buttons">
-                                <a href="https://github.com/osiset/laravel-shopify" target="_blank" class="btn btn-primary">Package</a>
-                                <a href="https://laravel.com/docs" target="_blank" class="btn btn-outline">Laravel</a>
-                                <a href="https://github.com/" target="_blank" class="btn btn-outline">GitHub</a>
-                            </div>
                             <footer>
                                 Chal be 
                             </footer>

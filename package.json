@@ -4,7 +4,7 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "concurrently \"php artisan serve\" \"vite\" \"ngrok http --url=fa2bb900af8b-11221195711027500520.ngrok-free.app 8000\""
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
@@ -15,7 +15,6 @@
     },
     "dependencies": {
         "@shopify/app-bridge": "^3.7.11",
-        "@shopify/app-bridge-react": "^4.2.10",
         "@vitejs/plugin-react": "^6.0.1",
         "react": "^19.2.5",
         "react-dom": "^19.2.5"
